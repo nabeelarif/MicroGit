@@ -15,6 +15,8 @@
 		F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */; };
 		F47036D11C6D0234009365D9 /* Micro_GitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036D01C6D0234009365D9 /* Micro_GitTests.m */; };
 		F47036DC1C6D0234009365D9 /* Micro_GitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036DB1C6D0234009365D9 /* Micro_GitUITests.m */; };
+		F47036EB1C6D1107009365D9 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = F47036E91C6D1107009365D9 /* iTunesArtwork.png */; };
+		F47036EC1C6D1107009365D9 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47036EA1C6D1107009365D9 /* iTunesArtwork@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F47036D71C6D0234009365D9 /* Micro GitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Micro GitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47036DB1C6D0234009365D9 /* Micro_GitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Micro_GitUITests.m; sourceTree = "<group>"; };
 		F47036DD1C6D0234009365D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47036E91C6D1107009365D9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		F47036EA1C6D1107009365D9 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				F47036C21C6D0234009365D9 /* Assets.xcassets */,
 				F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */,
 				F47036C71C6D0234009365D9 /* Info.plist */,
+				F47036E91C6D1107009365D9 /* iTunesArtwork.png */,
+				F47036EA1C6D1107009365D9 /* iTunesArtwork@2x.png */,
 				F47036B61C6D0234009365D9 /* Supporting Files */,
 			);
 			path = "Micro Git";
@@ -244,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */,
+				F47036EC1C6D1107009365D9 /* iTunesArtwork@2x.png in Resources */,
 				F47036C31C6D0234009365D9 /* Assets.xcassets in Resources */,
+				F47036EB1C6D1107009365D9 /* iTunesArtwork.png in Resources */,
 				F47036C11C6D0234009365D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
