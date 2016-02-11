@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F47036B81C6D0234009365D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036B71C6D0234009365D9 /* main.m */; };
+		F47036BB1C6D0234009365D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036BA1C6D0234009365D9 /* AppDelegate.m */; };
+		F47036BE1C6D0234009365D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036BD1C6D0234009365D9 /* ViewController.m */; };
+		F47036C11C6D0234009365D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47036BF1C6D0234009365D9 /* Main.storyboard */; };
+		F47036C31C6D0234009365D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47036C21C6D0234009365D9 /* Assets.xcassets */; };
+		F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */; };
+		F47036D11C6D0234009365D9 /* Micro_GitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036D01C6D0234009365D9 /* Micro_GitTests.m */; };
+		F47036DC1C6D0234009365D9 /* Micro_GitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036DB1C6D0234009365D9 /* Micro_GitUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F47036CD1C6D0234009365D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47036AB1C6D0234009365D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47036B21C6D0234009365D9;
+			remoteInfo = "Micro Git";
+		};
+		F47036D81C6D0234009365D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47036AB1C6D0234009365D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47036B21C6D0234009365D9;
+			remoteInfo = "Micro Git";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F47036B31C6D0234009365D9 /* Micro Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Micro Git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47036B71C6D0234009365D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F47036B91C6D0234009365D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F47036BA1C6D0234009365D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F47036BC1C6D0234009365D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F47036BD1C6D0234009365D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F47036C01C6D0234009365D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F47036C21C6D0234009365D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47036C51C6D0234009365D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F47036C71C6D0234009365D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47036CC1C6D0234009365D9 /* Micro GitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Micro GitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47036D01C6D0234009365D9 /* Micro_GitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Micro_GitTests.m; sourceTree = "<group>"; };
+		F47036D21C6D0234009365D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47036D71C6D0234009365D9 /* Micro GitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Micro GitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47036DB1C6D0234009365D9 /* Micro_GitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Micro_GitUITests.m; sourceTree = "<group>"; };
+		F47036DD1C6D0234009365D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47036B01C6D0234009365D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47036C91C6D0234009365D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47036D41C6D0234009365D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F47036AA1C6D0234009365D9 = {
+			isa = PBXGroup;
+			children = (
+				F47036B51C6D0234009365D9 /* Micro Git */,
+				F47036CF1C6D0234009365D9 /* Micro GitTests */,
+				F47036DA1C6D0234009365D9 /* Micro GitUITests */,
+				F47036B41C6D0234009365D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F47036B41C6D0234009365D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47036B31C6D0234009365D9 /* Micro Git.app */,
+				F47036CC1C6D0234009365D9 /* Micro GitTests.xctest */,
+				F47036D71C6D0234009365D9 /* Micro GitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47036B51C6D0234009365D9 /* Micro Git */ = {
+			isa = PBXGroup;
+			children = (
+				F47036B91C6D0234009365D9 /* AppDelegate.h */,
+				F47036BA1C6D0234009365D9 /* AppDelegate.m */,
+				F47036BC1C6D0234009365D9 /* ViewController.h */,
+				F47036BD1C6D0234009365D9 /* ViewController.m */,
+				F47036BF1C6D0234009365D9 /* Main.storyboard */,
+				F47036C21C6D0234009365D9 /* Assets.xcassets */,
+				F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */,
+				F47036C71C6D0234009365D9 /* Info.plist */,
+				F47036B61C6D0234009365D9 /* Supporting Files */,
+			);
+			path = "Micro Git";
+			sourceTree = "<group>";
+		};
+		F47036B61C6D0234009365D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F47036B71C6D0234009365D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F47036CF1C6D0234009365D9 /* Micro GitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F47036D01C6D0234009365D9 /* Micro_GitTests.m */,
+				F47036D21C6D0234009365D9 /* Info.plist */,
+			);
+			path = "Micro GitTests";
+			sourceTree = "<group>";
+		};
+		F47036DA1C6D0234009365D9 /* Micro GitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F47036DB1C6D0234009365D9 /* Micro_GitUITests.m */,
+				F47036DD1C6D0234009365D9 /* Info.plist */,
+			);
+			path = "Micro GitUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47036B21C6D0234009365D9 /* Micro Git */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47036E01C6D0234009365D9 /* Build configuration list for PBXNativeTarget "Micro Git" */;
+			buildPhases = (
+				F47036AF1C6D0234009365D9 /* Sources */,
+				F47036B01C6D0234009365D9 /* Frameworks */,
+				F47036B11C6D0234009365D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Micro Git";
+			productName = "Micro Git";
+			productReference = F47036B31C6D0234009365D9 /* Micro Git.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F47036CB1C6D0234009365D9 /* Micro GitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47036E31C6D0234009365D9 /* Build configuration list for PBXNativeTarget "Micro GitTests" */;
+			buildPhases = (
+				F47036C81C6D0234009365D9 /* Sources */,
+				F47036C91C6D0234009365D9 /* Frameworks */,
+				F47036CA1C6D0234009365D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47036CE1C6D0234009365D9 /* PBXTargetDependency */,
+			);
+			name = "Micro GitTests";
+			productName = "Micro GitTests";
+			productReference = F47036CC1C6D0234009365D9 /* Micro GitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F47036D61C6D0234009365D9 /* Micro GitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47036E61C6D0234009365D9 /* Build configuration list for PBXNativeTarget "Micro GitUITests" */;
+			buildPhases = (
+				F47036D31C6D0234009365D9 /* Sources */,
+				F47036D41C6D0234009365D9 /* Frameworks */,
+				F47036D51C6D0234009365D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47036D91C6D0234009365D9 /* PBXTargetDependency */,
+			);
+			name = "Micro GitUITests";
+			productName = "Micro GitUITests";
+			productReference = F47036D71C6D0234009365D9 /* Micro GitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47036AB1C6D0234009365D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Nabeel;
+				TargetAttributes = {
+					F47036B21C6D0234009365D9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F47036CB1C6D0234009365D9 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F47036B21C6D0234009365D9;
+					};
+					F47036D61C6D0234009365D9 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F47036B21C6D0234009365D9;
+					};
+				};
+			};
+			buildConfigurationList = F47036AE1C6D0234009365D9 /* Build configuration list for PBXProject "Micro Git" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F47036AA1C6D0234009365D9;
+			productRefGroup = F47036B41C6D0234009365D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47036B21C6D0234009365D9 /* Micro Git */,
+				F47036CB1C6D0234009365D9 /* Micro GitTests */,
+				F47036D61C6D0234009365D9 /* Micro GitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F47036B11C6D0234009365D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */,
+				F47036C31C6D0234009365D9 /* Assets.xcassets in Resources */,
+				F47036C11C6D0234009365D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47036CA1C6D0234009365D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47036D51C6D0234009365D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47036AF1C6D0234009365D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47036BE1C6D0234009365D9 /* ViewController.m in Sources */,
+				F47036BB1C6D0234009365D9 /* AppDelegate.m in Sources */,
+				F47036B81C6D0234009365D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47036C81C6D0234009365D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47036D11C6D0234009365D9 /* Micro_GitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47036D31C6D0234009365D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47036DC1C6D0234009365D9 /* Micro_GitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F47036CE1C6D0234009365D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47036B21C6D0234009365D9 /* Micro Git */;
+			targetProxy = F47036CD1C6D0234009365D9 /* PBXContainerItemProxy */;
+		};
+		F47036D91C6D0234009365D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47036B21C6D0234009365D9 /* Micro Git */;
+			targetProxy = F47036D81C6D0234009365D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F47036BF1C6D0234009365D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47036C01C6D0234009365D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47036C51C6D0234009365D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F47036DE1C6D0234009365D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F47036DF1C6D0234009365D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F47036E11C6D0234009365D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Micro Git/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabeel.Micro-Git";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F47036E21C6D0234009365D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Micro Git/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabeel.Micro-Git";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F47036E41C6D0234009365D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Micro GitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabeel.Micro-GitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Micro Git.app/Micro Git";
+			};
+			name = Debug;
+		};
+		F47036E51C6D0234009365D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Micro GitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabeel.Micro-GitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Micro Git.app/Micro Git";
+			};
+			name = Release;
+		};
+		F47036E71C6D0234009365D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Micro GitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabeel.Micro-GitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Micro Git";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F47036E81C6D0234009365D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Micro GitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nabeel.Micro-GitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Micro Git";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47036AE1C6D0234009365D9 /* Build configuration list for PBXProject "Micro Git" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47036DE1C6D0234009365D9 /* Debug */,
+				F47036DF1C6D0234009365D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47036E01C6D0234009365D9 /* Build configuration list for PBXNativeTarget "Micro Git" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47036E11C6D0234009365D9 /* Debug */,
+				F47036E21C6D0234009365D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F47036E31C6D0234009365D9 /* Build configuration list for PBXNativeTarget "Micro GitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47036E41C6D0234009365D9 /* Debug */,
+				F47036E51C6D0234009365D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F47036E61C6D0234009365D9 /* Build configuration list for PBXNativeTarget "Micro GitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47036E71C6D0234009365D9 /* Debug */,
+				F47036E81C6D0234009365D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F47036AB1C6D0234009365D9 /* Project object */;
+}
