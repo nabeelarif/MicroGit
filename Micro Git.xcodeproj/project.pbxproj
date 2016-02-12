@@ -261,6 +261,7 @@
 				TargetAttributes = {
 					F47036B21C6D0234009365D9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9FH974544H;
 					};
 					F47036CB1C6D0234009365D9 = {
 						CreatedOnToolsVersion = 7.2;
@@ -593,6 +594,7 @@
 			baseConfigurationReference = EC7D2833AD4C4983F2F91EDE /* Pods-Micro Git.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Micro Git/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -606,6 +608,7 @@
 			baseConfigurationReference = 83291FEEC92B5E0E3E7F0D7B /* Pods-Micro Git.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Micro Git/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
