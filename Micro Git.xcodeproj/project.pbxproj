@@ -6,13 +6,40 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7DF9E7C01C6F12B900137669 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7DF9E7C31C6F12B900137669 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				7DF9E7C41C6F12C400137669 /* Mogenerator Run Script */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1025B9FF2F362577FC17BFDB /* libPods-Micro GitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB852916BEFD15CE2385355 /* libPods-Micro GitUITests.a */; };
 		56627E9DE6B2375FF50EB53C /* libPods-Micro GitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F7FA479C9F3A63A64C7316 /* libPods-Micro GitTests.a */; };
+		7DCA07241C6E81450080194B /* MicroGitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA07221C6E81450080194B /* MicroGitModel.xcdatamodeld */; };
+		7DF4D9981C6F9286007D47B3 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9971C6F9286007D47B3 /* APIClient.m */; };
+		7DF4D99B1C6FB685007D47B3 /* RepositoriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */; };
+		7DF4D99E1C6FB9C8007D47B3 /* BaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */; };
+		7DF4D9A21C6FE42E007D47B3 /* BottomRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A11C6FE42E007D47B3 /* BottomRefreshControl.m */; };
+		7DF4D9A41C6FE43F007D47B3 /* BottomRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A31C6FE43F007D47B3 /* BottomRefreshControl.xib */; };
+		7DFCF2081C6F4DF80023FB31 /* _GitIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */; };
+		7DFCF2091C6F4DF80023FB31 /* _GitRepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF1FF1C6F4DF80023FB31 /* _GitRepositoryModel.m */; };
+		7DFCF20A1C6F4DF80023FB31 /* _GitUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF2011C6F4DF80023FB31 /* _GitUserModel.m */; };
+		7DFCF20B1C6F4DF80023FB31 /* GitIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF2031C6F4DF80023FB31 /* GitIssueModel.m */; };
+		7DFCF20C1C6F4DF80023FB31 /* GitRepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF2051C6F4DF80023FB31 /* GitRepositoryModel.m */; };
+		7DFCF20D1C6F4DF80023FB31 /* GitUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF2071C6F4DF80023FB31 /* GitUserModel.m */; };
+		7DFCF2101C6F6D800023FB31 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF20F1C6F6D800023FB31 /* BaseModel.m */; };
 		EC7CA863453F73013F130A9E /* libPods-Micro Git.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA06E2199BE19C497053D1B /* libPods-Micro Git.a */; };
 		F47036B81C6D0234009365D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036B71C6D0234009365D9 /* main.m */; };
 		F47036BB1C6D0234009365D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036BA1C6D0234009365D9 /* AppDelegate.m */; };
-		F47036BE1C6D0234009365D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036BD1C6D0234009365D9 /* ViewController.m */; };
+		F47036BE1C6D0234009365D9 /* RepositoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47036BD1C6D0234009365D9 /* RepositoriesTableViewController.m */; };
 		F47036C11C6D0234009365D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47036BF1C6D0234009365D9 /* Main.storyboard */; };
 		F47036C31C6D0234009365D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47036C21C6D0234009365D9 /* Assets.xcassets */; };
 		F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */; };
@@ -41,6 +68,30 @@
 
 /* Begin PBXFileReference section */
 		6D5F224A2444D71C02D6E287 /* Pods-Micro GitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DCA07231C6E81450080194B /* MicroGitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroGitModel.xcdatamodel; sourceTree = "<group>"; };
+		7DF4D9961C6F9286007D47B3 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		7DF4D9971C6F9286007D47B3 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		7DF4D9991C6FB685007D47B3 /* RepositoriesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoriesAPI.h; sourceTree = "<group>"; };
+		7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoriesAPI.m; sourceTree = "<group>"; };
+		7DF4D99C1C6FB9C8007D47B3 /* BaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPI.h; sourceTree = "<group>"; };
+		7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPI.m; sourceTree = "<group>"; };
+		7DF4D9A01C6FE42E007D47B3 /* BottomRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomRefreshControl.h; sourceTree = "<group>"; };
+		7DF4D9A11C6FE42E007D47B3 /* BottomRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomRefreshControl.m; sourceTree = "<group>"; };
+		7DF4D9A31C6FE43F007D47B3 /* BottomRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomRefreshControl.xib; sourceTree = "<group>"; };
+		7DFCF1FC1C6F4DF80023FB31 /* _GitIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitIssueModel.h; sourceTree = "<group>"; };
+		7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GitIssueModel.m; sourceTree = "<group>"; };
+		7DFCF1FE1C6F4DF80023FB31 /* _GitRepositoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitRepositoryModel.h; sourceTree = "<group>"; };
+		7DFCF1FF1C6F4DF80023FB31 /* _GitRepositoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GitRepositoryModel.m; sourceTree = "<group>"; };
+		7DFCF2001C6F4DF80023FB31 /* _GitUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitUserModel.h; sourceTree = "<group>"; };
+		7DFCF2011C6F4DF80023FB31 /* _GitUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GitUserModel.m; sourceTree = "<group>"; };
+		7DFCF2021C6F4DF80023FB31 /* GitIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitIssueModel.h; sourceTree = "<group>"; };
+		7DFCF2031C6F4DF80023FB31 /* GitIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitIssueModel.m; sourceTree = "<group>"; };
+		7DFCF2041C6F4DF80023FB31 /* GitRepositoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitRepositoryModel.h; sourceTree = "<group>"; };
+		7DFCF2051C6F4DF80023FB31 /* GitRepositoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitRepositoryModel.m; sourceTree = "<group>"; };
+		7DFCF2061C6F4DF80023FB31 /* GitUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitUserModel.h; sourceTree = "<group>"; };
+		7DFCF2071C6F4DF80023FB31 /* GitUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitUserModel.m; sourceTree = "<group>"; };
+		7DFCF20E1C6F6D800023FB31 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		7DFCF20F1C6F6D800023FB31 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		83291FEEC92B5E0E3E7F0D7B /* Pods-Micro Git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro Git.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro Git/Pods-Micro Git.release.xcconfig"; sourceTree = "<group>"; };
 		ABA06E2199BE19C497053D1B /* libPods-Micro Git.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Micro Git.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE641B63EA6DADFF41F2F4D0 /* Pods-Micro GitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitTests/Pods-Micro GitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,8 +103,8 @@
 		F47036B71C6D0234009365D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F47036B91C6D0234009365D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F47036BA1C6D0234009365D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F47036BC1C6D0234009365D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F47036BD1C6D0234009365D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F47036BC1C6D0234009365D9 /* RepositoriesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesTableViewController.h; sourceTree = "<group>"; };
+		F47036BD1C6D0234009365D9 /* RepositoriesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesTableViewController.m; sourceTree = "<group>"; };
 		F47036C01C6D0234009365D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47036C21C6D0234009365D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47036C51C6D0234009365D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,6 +148,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DCA07201C6E7C710080194B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA07221C6E81450080194B /* MicroGitModel.xcdatamodeld */,
+				7DFCF1FB1C6F4DF80023FB31 /* Objects */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DCA07211C6E7C8E0080194B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4D9961C6F9286007D47B3 /* APIClient.h */,
+				7DF4D9971C6F9286007D47B3 /* APIClient.m */,
+				7DF4D9991C6FB685007D47B3 /* RepositoriesAPI.h */,
+				7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */,
+				7DF4D99C1C6FB9C8007D47B3 /* BaseAPI.h */,
+				7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7DF4D99F1C6FE3FF007D47B3 /* BottomRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4D9A01C6FE42E007D47B3 /* BottomRefreshControl.h */,
+				7DF4D9A11C6FE42E007D47B3 /* BottomRefreshControl.m */,
+				7DF4D9A31C6FE43F007D47B3 /* BottomRefreshControl.xib */,
+			);
+			path = BottomRefreshControl;
+			sourceTree = "<group>";
+		};
+		7DFCF1FB1C6F4DF80023FB31 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7DFCF1FC1C6F4DF80023FB31 /* _GitIssueModel.h */,
+				7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */,
+				7DFCF1FE1C6F4DF80023FB31 /* _GitRepositoryModel.h */,
+				7DFCF1FF1C6F4DF80023FB31 /* _GitRepositoryModel.m */,
+				7DFCF2001C6F4DF80023FB31 /* _GitUserModel.h */,
+				7DFCF2011C6F4DF80023FB31 /* _GitUserModel.m */,
+				7DFCF2021C6F4DF80023FB31 /* GitIssueModel.h */,
+				7DFCF2031C6F4DF80023FB31 /* GitIssueModel.m */,
+				7DFCF2041C6F4DF80023FB31 /* GitRepositoryModel.h */,
+				7DFCF2051C6F4DF80023FB31 /* GitRepositoryModel.m */,
+				7DFCF2061C6F4DF80023FB31 /* GitUserModel.h */,
+				7DFCF2071C6F4DF80023FB31 /* GitUserModel.m */,
+				7DFCF20E1C6F6D800023FB31 /* BaseModel.h */,
+				7DFCF20F1C6F6D800023FB31 /* BaseModel.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		D4EF137163E938C638E31A91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,10 +249,13 @@
 		F47036B51C6D0234009365D9 /* Micro Git */ = {
 			isa = PBXGroup;
 			children = (
+				7DF4D99F1C6FE3FF007D47B3 /* BottomRefreshControl */,
+				7DCA07211C6E7C8E0080194B /* API */,
+				7DCA07201C6E7C710080194B /* Model */,
 				F47036B91C6D0234009365D9 /* AppDelegate.h */,
 				F47036BA1C6D0234009365D9 /* AppDelegate.m */,
-				F47036BC1C6D0234009365D9 /* ViewController.h */,
-				F47036BD1C6D0234009365D9 /* ViewController.m */,
+				F47036BC1C6D0234009365D9 /* RepositoriesTableViewController.h */,
+				F47036BD1C6D0234009365D9 /* RepositoriesTableViewController.m */,
 				F47036BF1C6D0234009365D9 /* Main.storyboard */,
 				F47036C21C6D0234009365D9 /* Assets.xcassets */,
 				F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */,
@@ -259,6 +366,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Nabeel;
 				TargetAttributes = {
+					7DF9E7C01C6F12B900137669 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					F47036B21C6D0234009365D9 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 9FH974544H;
@@ -289,6 +399,7 @@
 				F47036B21C6D0234009365D9 /* Micro Git */,
 				F47036CB1C6D0234009365D9 /* Micro GitTests */,
 				F47036D61C6D0234009365D9 /* Micro GitUITests */,
+				7DF9E7C01C6F12B900137669 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +411,7 @@
 			files = (
 				F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */,
 				F47036EC1C6D1107009365D9 /* iTunesArtwork@2x.png in Resources */,
+				7DF4D9A41C6FE43F007D47B3 /* BottomRefreshControl.xib in Resources */,
 				F47036C31C6D0234009365D9 /* Assets.xcassets in Resources */,
 				F47036EB1C6D1107009365D9 /* iTunesArtwork.png in Resources */,
 				F47036C11C6D0234009365D9 /* Main.storyboard in Resources */,
@@ -383,6 +495,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		7DF9E7C41C6F12C400137669 /* Mogenerator Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mogenerator Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m Micro\\ Git/Model/MicroGitModel.xcdatamodeld -O Micro\\ Git/Model/Objects --template-var arc=true --base-class BaseModel";
+		};
 		A4F50B722795F3390578AE2A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,9 +576,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47036BE1C6D0234009365D9 /* ViewController.m in Sources */,
+				7DFCF20B1C6F4DF80023FB31 /* GitIssueModel.m in Sources */,
+				7DFCF2091C6F4DF80023FB31 /* _GitRepositoryModel.m in Sources */,
+				F47036BE1C6D0234009365D9 /* RepositoriesTableViewController.m in Sources */,
+				7DF4D9A21C6FE42E007D47B3 /* BottomRefreshControl.m in Sources */,
+				7DFCF2101C6F6D800023FB31 /* BaseModel.m in Sources */,
+				7DCA07241C6E81450080194B /* MicroGitModel.xcdatamodeld in Sources */,
+				7DF4D99E1C6FB9C8007D47B3 /* BaseAPI.m in Sources */,
 				F47036BB1C6D0234009365D9 /* AppDelegate.m in Sources */,
+				7DF4D99B1C6FB685007D47B3 /* RepositoriesAPI.m in Sources */,
 				F47036B81C6D0234009365D9 /* main.m in Sources */,
+				7DF4D9981C6F9286007D47B3 /* APIClient.m in Sources */,
+				7DFCF20C1C6F4DF80023FB31 /* GitRepositoryModel.m in Sources */,
+				7DFCF2081C6F4DF80023FB31 /* _GitIssueModel.m in Sources */,
+				7DFCF20A1C6F4DF80023FB31 /* _GitUserModel.m in Sources */,
+				7DFCF20D1C6F4DF80023FB31 /* GitUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +645,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7DF9E7C11C6F12B900137669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DF9E7C21C6F12B900137669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F47036DE1C6D0234009365D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -672,6 +824,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7DF9E7C31C6F12B900137669 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DF9E7C11C6F12B900137669 /* Debug */,
+				7DF9E7C21C6F12B900137669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F47036AE1C6D0234009365D9 /* Build configuration list for PBXProject "Micro Git" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -709,6 +870,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7DCA07221C6E81450080194B /* MicroGitModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7DCA07231C6E81450080194B /* MicroGitModel.xcdatamodel */,
+			);
+			currentVersion = 7DCA07231C6E81450080194B /* MicroGitModel.xcdatamodel */;
+			path = MicroGitModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F47036AB1C6D0234009365D9 /* Project object */;
 }
