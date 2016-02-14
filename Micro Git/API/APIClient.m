@@ -8,11 +8,15 @@
 
 #import "APIClient.h"
 #import "RepositoriesAPI.h"
+#import "IssuesAPI.h"
+#import "ContributorsAPI.h"
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 
 @interface APIClient ()
 
 @property (nonatomic,strong) RepositoriesAPI *repositoriesApi;
+@property (nonatomic,strong) IssuesAPI *issuesApi;
+@property (nonatomic,strong) ContributorsAPI *contributorsApi;
 
 @end
 
@@ -24,6 +28,8 @@
     dispatch_once(&token, ^{
         sharedClient = [[self alloc] init];
         sharedClient.repositoriesApi = [[RepositoriesAPI alloc] init];
+        sharedClient.issuesApi = [[IssuesAPI alloc] init];
+        sharedClient.contributorsApi = [[ContributorsAPI alloc] init];
         [sharedClient addNetworkStatusListener];
     });
     return sharedClient;
@@ -48,5 +54,13 @@
 -(void)loadRepositoriesForLanguage:(NSString*)language apiBlock:(APIBlock)block
 {
     [_repositoriesApi loadRepositoriesForLanguage:language apiBlock:block];
+}
+-(void)loadIssuesOfRepository:(id)repository apiBlock:(APIBlock)block
+{
+    [_issuesApi loadIssuesOfRepository:repository apiBlock:block];
+}
+-(void)loadContributorsOfRepository:(id)repository apiBlock:(APIBlock)block
+{
+    [_contributorsApi loadContributorsOfRepository:repository apiBlock:block];
 }
 @end

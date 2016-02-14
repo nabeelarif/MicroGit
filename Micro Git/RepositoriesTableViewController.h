@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PaginatedTableViewController.h"
 
-@interface RepositoriesTableViewController : UITableViewController
+@interface RepositoriesTableViewController : PaginatedTableViewController
 @property (nonatomic,strong) NSString * language;
 @end
 

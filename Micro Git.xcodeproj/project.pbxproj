@@ -24,11 +24,23 @@
 		1025B9FF2F362577FC17BFDB /* libPods-Micro GitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB852916BEFD15CE2385355 /* libPods-Micro GitUITests.a */; };
 		56627E9DE6B2375FF50EB53C /* libPods-Micro GitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F7FA479C9F3A63A64C7316 /* libPods-Micro GitTests.a */; };
 		7DCA07241C6E81450080194B /* MicroGitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA07221C6E81450080194B /* MicroGitModel.xcdatamodeld */; };
+		7DF220C61C707F99004F1CEF /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF220C51C707F99004F1CEF /* octicons.ttf */; };
+		7DF220CA1C70866B004F1CEF /* OctIconConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220C91C70866B004F1CEF /* OctIconConstants.m */; };
+		7DF220CE1C708E09004F1CEF /* MicroGitTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220CD1C708E09004F1CEF /* MicroGitTheme.m */; };
+		7DF220D11C709042004F1CEF /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220D01C709042004F1CEF /* UIColor+Theme.m */; };
+		7DF220D41C709064004F1CEF /* UIFont+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220D31C709064004F1CEF /* UIFont+Theme.m */; };
+		7DF220D81C7094DE004F1CEF /* MicroGitLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220D71C7094DE004F1CEF /* MicroGitLabel.m */; };
+		7DF220DB1C709E9A004F1CEF /* PaginatedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */; };
+		7DF220DE1C70CCE3004F1CEF /* IssuesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220DD1C70CCE3004F1CEF /* IssuesAPI.m */; };
+		7DF220E11C70CCFC004F1CEF /* ContributorsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220E01C70CCFC004F1CEF /* ContributorsAPI.m */; };
 		7DF4D9981C6F9286007D47B3 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9971C6F9286007D47B3 /* APIClient.m */; };
 		7DF4D99B1C6FB685007D47B3 /* RepositoriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */; };
 		7DF4D99E1C6FB9C8007D47B3 /* BaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */; };
 		7DF4D9A21C6FE42E007D47B3 /* BottomRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A11C6FE42E007D47B3 /* BottomRefreshControl.m */; };
 		7DF4D9A41C6FE43F007D47B3 /* BottomRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A31C6FE43F007D47B3 /* BottomRefreshControl.xib */; };
+		7DF4D9A71C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A61C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m */; };
+		7DF4D9AA1C6FF4E3007D47B3 /* ContributorsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */; };
+		7DF4D9AD1C6FF4F8007D47B3 /* IssuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */; };
 		7DFCF2081C6F4DF80023FB31 /* _GitIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */; };
 		7DFCF2091C6F4DF80023FB31 /* _GitRepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF1FF1C6F4DF80023FB31 /* _GitRepositoryModel.m */; };
 		7DFCF20A1C6F4DF80023FB31 /* _GitUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF2011C6F4DF80023FB31 /* _GitUserModel.m */; };
@@ -69,6 +81,24 @@
 /* Begin PBXFileReference section */
 		6D5F224A2444D71C02D6E287 /* Pods-Micro GitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DCA07231C6E81450080194B /* MicroGitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroGitModel.xcdatamodel; sourceTree = "<group>"; };
+		7DF220C51C707F99004F1CEF /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
+		7DF220C71C708093004F1CEF /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		7DF220C81C70866B004F1CEF /* OctIconConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = OctIconConstants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7DF220C91C70866B004F1CEF /* OctIconConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctIconConstants.m; sourceTree = "<group>"; };
+		7DF220CC1C708E09004F1CEF /* MicroGitTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGitTheme.h; sourceTree = "<group>"; };
+		7DF220CD1C708E09004F1CEF /* MicroGitTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGitTheme.m; sourceTree = "<group>"; };
+		7DF220CF1C709042004F1CEF /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
+		7DF220D01C709042004F1CEF /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
+		7DF220D21C709064004F1CEF /* UIFont+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Theme.h"; sourceTree = "<group>"; };
+		7DF220D31C709064004F1CEF /* UIFont+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Theme.m"; sourceTree = "<group>"; };
+		7DF220D61C7094DE004F1CEF /* MicroGitLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGitLabel.h; sourceTree = "<group>"; };
+		7DF220D71C7094DE004F1CEF /* MicroGitLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGitLabel.m; sourceTree = "<group>"; };
+		7DF220D91C709E9A004F1CEF /* PaginatedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedTableViewController.h; sourceTree = "<group>"; };
+		7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedTableViewController.m; sourceTree = "<group>"; };
+		7DF220DC1C70CCE3004F1CEF /* IssuesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesAPI.h; sourceTree = "<group>"; };
+		7DF220DD1C70CCE3004F1CEF /* IssuesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesAPI.m; sourceTree = "<group>"; };
+		7DF220DF1C70CCFC004F1CEF /* ContributorsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsAPI.h; sourceTree = "<group>"; };
+		7DF220E01C70CCFC004F1CEF /* ContributorsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsAPI.m; sourceTree = "<group>"; };
 		7DF4D9961C6F9286007D47B3 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		7DF4D9971C6F9286007D47B3 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		7DF4D9991C6FB685007D47B3 /* RepositoriesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoriesAPI.h; sourceTree = "<group>"; };
@@ -78,6 +108,12 @@
 		7DF4D9A01C6FE42E007D47B3 /* BottomRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomRefreshControl.h; sourceTree = "<group>"; };
 		7DF4D9A11C6FE42E007D47B3 /* BottomRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomRefreshControl.m; sourceTree = "<group>"; };
 		7DF4D9A31C6FE43F007D47B3 /* BottomRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomRefreshControl.xib; sourceTree = "<group>"; };
+		7DF4D9A51C6FF4D4007D47B3 /* RepositoryDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryDetailTableViewController.h; sourceTree = "<group>"; };
+		7DF4D9A61C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryDetailTableViewController.m; sourceTree = "<group>"; };
+		7DF4D9A81C6FF4E3007D47B3 /* ContributorsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsTableViewController.h; sourceTree = "<group>"; };
+		7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsTableViewController.m; sourceTree = "<group>"; };
+		7DF4D9AB1C6FF4F8007D47B3 /* IssuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesTableViewController.h; sourceTree = "<group>"; };
+		7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesTableViewController.m; sourceTree = "<group>"; };
 		7DFCF1FC1C6F4DF80023FB31 /* _GitIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitIssueModel.h; sourceTree = "<group>"; };
 		7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GitIssueModel.m; sourceTree = "<group>"; };
 		7DFCF1FE1C6F4DF80023FB31 /* _GitRepositoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitRepositoryModel.h; sourceTree = "<group>"; };
@@ -166,8 +202,45 @@
 				7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */,
 				7DF4D99C1C6FB9C8007D47B3 /* BaseAPI.h */,
 				7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */,
+				7DF220DC1C70CCE3004F1CEF /* IssuesAPI.h */,
+				7DF220DD1C70CCE3004F1CEF /* IssuesAPI.m */,
+				7DF220DF1C70CCFC004F1CEF /* ContributorsAPI.h */,
+				7DF220E01C70CCFC004F1CEF /* ContributorsAPI.m */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		7DF220C21C707E8A004F1CEF /* GitFont */ = {
+			isa = PBXGroup;
+			children = (
+				7DF220C71C708093004F1CEF /* LICENSE.txt */,
+				7DF220C51C707F99004F1CEF /* octicons.ttf */,
+				7DF220C81C70866B004F1CEF /* OctIconConstants.h */,
+				7DF220C91C70866B004F1CEF /* OctIconConstants.m */,
+			);
+			path = GitFont;
+			sourceTree = "<group>";
+		};
+		7DF220CB1C708DE7004F1CEF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				7DF220CC1C708E09004F1CEF /* MicroGitTheme.h */,
+				7DF220CD1C708E09004F1CEF /* MicroGitTheme.m */,
+				7DF220CF1C709042004F1CEF /* UIColor+Theme.h */,
+				7DF220D01C709042004F1CEF /* UIColor+Theme.m */,
+				7DF220D21C709064004F1CEF /* UIFont+Theme.h */,
+				7DF220D31C709064004F1CEF /* UIFont+Theme.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		7DF220D51C7094B7004F1CEF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				7DF220D61C7094DE004F1CEF /* MicroGitLabel.h */,
+				7DF220D71C7094DE004F1CEF /* MicroGitLabel.m */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		7DF4D99F1C6FE3FF007D47B3 /* BottomRefreshControl */ = {
@@ -249,6 +322,9 @@
 		F47036B51C6D0234009365D9 /* Micro Git */ = {
 			isa = PBXGroup;
 			children = (
+				7DF220D51C7094B7004F1CEF /* CustomViews */,
+				7DF220CB1C708DE7004F1CEF /* Theme */,
+				7DF220C21C707E8A004F1CEF /* GitFont */,
 				7DF4D99F1C6FE3FF007D47B3 /* BottomRefreshControl */,
 				7DCA07211C6E7C8E0080194B /* API */,
 				7DCA07201C6E7C710080194B /* Model */,
@@ -263,6 +339,14 @@
 				F47036E91C6D1107009365D9 /* iTunesArtwork.png */,
 				F47036EA1C6D1107009365D9 /* iTunesArtwork@2x.png */,
 				F47036B61C6D0234009365D9 /* Supporting Files */,
+				7DF4D9A51C6FF4D4007D47B3 /* RepositoryDetailTableViewController.h */,
+				7DF4D9A61C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m */,
+				7DF4D9A81C6FF4E3007D47B3 /* ContributorsTableViewController.h */,
+				7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */,
+				7DF4D9AB1C6FF4F8007D47B3 /* IssuesTableViewController.h */,
+				7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */,
+				7DF220D91C709E9A004F1CEF /* PaginatedTableViewController.h */,
+				7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */,
 			);
 			path = "Micro Git";
 			sourceTree = "<group>";
@@ -411,6 +495,7 @@
 			files = (
 				F47036C61C6D0234009365D9 /* LaunchScreen.storyboard in Resources */,
 				F47036EC1C6D1107009365D9 /* iTunesArtwork@2x.png in Resources */,
+				7DF220C61C707F99004F1CEF /* octicons.ttf in Resources */,
 				7DF4D9A41C6FE43F007D47B3 /* BottomRefreshControl.xib in Resources */,
 				F47036C31C6D0234009365D9 /* Assets.xcassets in Resources */,
 				F47036EB1C6D1107009365D9 /* iTunesArtwork.png in Resources */,
@@ -577,15 +662,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DFCF20B1C6F4DF80023FB31 /* GitIssueModel.m in Sources */,
+				7DF4D9AA1C6FF4E3007D47B3 /* ContributorsTableViewController.m in Sources */,
 				7DFCF2091C6F4DF80023FB31 /* _GitRepositoryModel.m in Sources */,
 				F47036BE1C6D0234009365D9 /* RepositoriesTableViewController.m in Sources */,
 				7DF4D9A21C6FE42E007D47B3 /* BottomRefreshControl.m in Sources */,
+				7DF4D9AD1C6FF4F8007D47B3 /* IssuesTableViewController.m in Sources */,
+				7DF220D41C709064004F1CEF /* UIFont+Theme.m in Sources */,
 				7DFCF2101C6F6D800023FB31 /* BaseModel.m in Sources */,
 				7DCA07241C6E81450080194B /* MicroGitModel.xcdatamodeld in Sources */,
+				7DF220DB1C709E9A004F1CEF /* PaginatedTableViewController.m in Sources */,
+				7DF220D11C709042004F1CEF /* UIColor+Theme.m in Sources */,
+				7DF220DE1C70CCE3004F1CEF /* IssuesAPI.m in Sources */,
+				7DF220E11C70CCFC004F1CEF /* ContributorsAPI.m in Sources */,
 				7DF4D99E1C6FB9C8007D47B3 /* BaseAPI.m in Sources */,
 				F47036BB1C6D0234009365D9 /* AppDelegate.m in Sources */,
 				7DF4D99B1C6FB685007D47B3 /* RepositoriesAPI.m in Sources */,
+				7DF220CE1C708E09004F1CEF /* MicroGitTheme.m in Sources */,
 				F47036B81C6D0234009365D9 /* main.m in Sources */,
+				7DF220D81C7094DE004F1CEF /* MicroGitLabel.m in Sources */,
+				7DF220CA1C70866B004F1CEF /* OctIconConstants.m in Sources */,
+				7DF4D9A71C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m in Sources */,
 				7DF4D9981C6F9286007D47B3 /* APIClient.m in Sources */,
 				7DFCF20C1C6F4DF80023FB31 /* GitRepositoryModel.m in Sources */,
 				7DFCF2081C6F4DF80023FB31 /* _GitIssueModel.m in Sources */,

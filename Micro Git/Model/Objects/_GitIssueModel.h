@@ -15,6 +15,14 @@ extern const struct GitIssueModelAttributes {
 	__unsafe_unretained NSString *updatedAt;
 } GitIssueModelAttributes;
 
+extern const struct GitIssueModelRelationships {
+	__unsafe_unretained NSString *repository;
+	__unsafe_unretained NSString *user;
+} GitIssueModelRelationships;
+
+@class GitRepositoryModel;
+@class GitUserModel;
+
 @interface GitIssueModelID : NSManagedObjectID {}
 @end
 
@@ -68,6 +76,14 @@ extern const struct GitIssueModelAttributes {
 
 //- (BOOL)validateUpdatedAt:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) GitRepositoryModel *repository;
+
+//- (BOOL)validateRepository:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) GitUserModel *user;
+
+//- (BOOL)validateUser:(id*)value_ error:(NSError**)error_;
+
 @end
 
 @interface _GitIssueModel (CoreDataGeneratedPrimitiveAccessors)
@@ -104,5 +120,11 @@ extern const struct GitIssueModelAttributes {
 
 - (NSDate*)primitiveUpdatedAt;
 - (void)setPrimitiveUpdatedAt:(NSDate*)value;
+
+- (GitRepositoryModel*)primitiveRepository;
+- (void)setPrimitiveRepository:(GitRepositoryModel*)value;
+
+- (GitUserModel*)primitiveUser;
+- (void)setPrimitiveUser:(GitUserModel*)value;
 
 @end

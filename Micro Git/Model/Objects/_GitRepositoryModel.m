@@ -18,6 +18,8 @@ const struct GitRepositoryModelAttributes GitRepositoryModelAttributes = {
 };
 
 const struct GitRepositoryModelRelationships GitRepositoryModelRelationships = {
+	.contributors = @"contributors",
+	.issues = @"issues",
 	.owner = @"owner",
 };
 
@@ -186,6 +188,28 @@ const struct GitRepositoryModelRelationships GitRepositoryModelRelationships = {
 
 - (void)setPrimitiveWatchersCountValue:(int32_t)value_ {
 	[self setPrimitiveWatchersCount:[NSNumber numberWithInt:value_]];
+}
+
+@dynamic contributors;
+
+- (NSMutableSet*)contributorsSet {
+	[self willAccessValueForKey:@"contributors"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"contributors"];
+
+	[self didAccessValueForKey:@"contributors"];
+	return result;
+}
+
+@dynamic issues;
+
+- (NSMutableSet*)issuesSet {
+	[self willAccessValueForKey:@"issues"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"issues"];
+
+	[self didAccessValueForKey:@"issues"];
+	return result;
 }
 
 @dynamic owner;

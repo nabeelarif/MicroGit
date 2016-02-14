@@ -10,6 +10,11 @@ const struct GitUserModelAttributes GitUserModelAttributes = {
 	.uniqueId = @"uniqueId",
 };
 
+const struct GitUserModelRelationships GitUserModelRelationships = {
+	.contributed = @"contributed",
+	.owned = @"owned",
+};
+
 @implementation GitUserModelID
 @end
 
@@ -70,6 +75,10 @@ const struct GitUserModelAttributes GitUserModelAttributes = {
 - (void)setPrimitiveUniqueIdValue:(int32_t)value_ {
 	[self setPrimitiveUniqueId:[NSNumber numberWithInt:value_]];
 }
+
+@dynamic contributed;
+
+@dynamic owned;
 
 @end
 

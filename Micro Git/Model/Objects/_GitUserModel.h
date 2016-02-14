@@ -11,6 +11,14 @@ extern const struct GitUserModelAttributes {
 	__unsafe_unretained NSString *uniqueId;
 } GitUserModelAttributes;
 
+extern const struct GitUserModelRelationships {
+	__unsafe_unretained NSString *contributed;
+	__unsafe_unretained NSString *owned;
+} GitUserModelRelationships;
+
+@class GitRepositoryModel;
+@class GitRepositoryModel;
+
 @interface GitUserModelID : NSManagedObjectID {}
 @end
 
@@ -40,6 +48,14 @@ extern const struct GitUserModelAttributes {
 
 //- (BOOL)validateUniqueId:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) GitRepositoryModel *contributed;
+
+//- (BOOL)validateContributed:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) GitRepositoryModel *owned;
+
+//- (BOOL)validateOwned:(id*)value_ error:(NSError**)error_;
+
 @end
 
 @interface _GitUserModel (CoreDataGeneratedPrimitiveAccessors)
@@ -55,5 +71,11 @@ extern const struct GitUserModelAttributes {
 
 - (int32_t)primitiveUniqueIdValue;
 - (void)setPrimitiveUniqueIdValue:(int32_t)value_;
+
+- (GitRepositoryModel*)primitiveContributed;
+- (void)setPrimitiveContributed:(GitRepositoryModel*)value;
+
+- (GitRepositoryModel*)primitiveOwned;
+- (void)setPrimitiveOwned:(GitRepositoryModel*)value;
 
 @end

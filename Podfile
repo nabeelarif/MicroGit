@@ -4,6 +4,7 @@ def shared_pods
     pod 'AFNetworking', '~> 3.0'
     pod 'MagicalRecord'
     pod 'TWMessageBarManager'
+    pod 'SDWebImage', '~>3.7'
 end
 
 target 'Micro Git' do

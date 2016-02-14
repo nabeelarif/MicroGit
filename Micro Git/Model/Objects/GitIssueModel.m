@@ -1,4 +1,5 @@
 #import "GitIssueModel.h"
+#import "GitUserModel.h"
 
 @interface GitIssueModel ()
 
@@ -18,6 +19,17 @@
     self.title = [dictionary valueForKey:@"title"];
     self.uniqueId = [dictionary valueForKey:@"id"];
     self.updatedAt = [[self dateFormatter] dateFromString:[dictionary valueForKey:@"updated_at"]];
+    
+    // Parse User
+    NSDictionary *dUser = [dictionary valueForKey:@"user"];
+    GitUserModel *user = self.user;
+    if (!user) {
+        user = [GitUserModel MR_findFirstByAttribute:@"uniqueId" withValue:[dUser valueForKey:@"id"] inContext:self.managedObjectContext];
+        if (user) {
+            user =  [GitUserModel MR_createEntityInContext:self.managedObjectContext];
+        }
+    }
+    [user parseWithDictionary:dUser];
 }
 
 @end

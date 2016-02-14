@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseAPI.h"
+#import "GitRepositoryModel.h"
 
 #define APIClientKit [APIClient sharedInstance]
 
@@ -15,4 +16,6 @@
 @property (nonatomic,readonly) BOOL isNetworkReachable;
 +(instancetype)sharedInstance;
 -(void)loadRepositoriesForLanguage:(NSString*)language apiBlock:(APIBlock)block;
+-(void)loadIssuesOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
+-(void)loadContributorsOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
 @end

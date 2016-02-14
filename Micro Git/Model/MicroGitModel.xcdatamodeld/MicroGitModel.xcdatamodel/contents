@@ -9,6 +9,8 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uniqueId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="repository" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitRepository" inverseName="issues" inverseEntity="GitRepository" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitUser" syncable="YES"/>
         <compoundIndexes>
             <compoundIndex>
                 <index value="uniqueId"/>
@@ -27,7 +29,9 @@
         <attribute name="uniqueId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="watchersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitUser" syncable="YES"/>
+        <relationship name="contributors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GitUser" inverseName="contributed" inverseEntity="GitUser" syncable="YES"/>
+        <relationship name="issues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GitIssue" inverseName="repository" inverseEntity="GitIssue" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitUser" inverseName="owned" inverseEntity="GitUser" syncable="YES"/>
         <compoundIndexes>
             <compoundIndex>
                 <index value="uniqueId"/>
@@ -39,6 +43,8 @@
         <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uniqueId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="contributed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitRepository" inverseName="contributors" inverseEntity="GitRepository" syncable="YES"/>
+        <relationship name="owned" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitRepository" inverseName="owner" inverseEntity="GitRepository" syncable="YES"/>
         <compoundIndexes>
             <compoundIndex>
                 <index value="uniqueId"/>
@@ -46,8 +52,8 @@
         </compoundIndexes>
     </entity>
     <elements>
-        <element name="GitIssue" positionX="-36" positionY="9" width="128" height="165"/>
-        <element name="GitRepository" positionX="-63" positionY="-18" width="128" height="225"/>
-        <element name="GitUser" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="GitIssue" positionX="-36" positionY="9" width="128" height="195"/>
+        <element name="GitRepository" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="GitUser" positionX="-54" positionY="-9" width="128" height="135"/>
     </elements>
 </model>

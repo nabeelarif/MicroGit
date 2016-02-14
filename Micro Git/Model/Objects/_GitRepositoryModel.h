@@ -19,9 +19,13 @@ extern const struct GitRepositoryModelAttributes {
 } GitRepositoryModelAttributes;
 
 extern const struct GitRepositoryModelRelationships {
+	__unsafe_unretained NSString *contributors;
+	__unsafe_unretained NSString *issues;
 	__unsafe_unretained NSString *owner;
 } GitRepositoryModelRelationships;
 
+@class GitUserModel;
+@class GitIssueModel;
 @class GitUserModel;
 
 @interface GitRepositoryModelID : NSManagedObjectID {}
@@ -97,9 +101,33 @@ extern const struct GitRepositoryModelRelationships {
 
 //- (BOOL)validateWatchersCount:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSSet *contributors;
+
+- (NSMutableSet*)contributorsSet;
+
+@property (nonatomic, strong) NSSet *issues;
+
+- (NSMutableSet*)issuesSet;
+
 @property (nonatomic, strong) GitUserModel *owner;
 
 //- (BOOL)validateOwner:(id*)value_ error:(NSError**)error_;
+
+@end
+
+@interface _GitRepositoryModel (ContributorsCoreDataGeneratedAccessors)
+- (void)addContributors:(NSSet*)value_;
+- (void)removeContributors:(NSSet*)value_;
+- (void)addContributorsObject:(GitUserModel*)value_;
+- (void)removeContributorsObject:(GitUserModel*)value_;
+
+@end
+
+@interface _GitRepositoryModel (IssuesCoreDataGeneratedAccessors)
+- (void)addIssues:(NSSet*)value_;
+- (void)removeIssues:(NSSet*)value_;
+- (void)addIssuesObject:(GitIssueModel*)value_;
+- (void)removeIssuesObject:(GitIssueModel*)value_;
 
 @end
 
@@ -152,6 +180,12 @@ extern const struct GitRepositoryModelRelationships {
 
 - (int32_t)primitiveWatchersCountValue;
 - (void)setPrimitiveWatchersCountValue:(int32_t)value_;
+
+- (NSMutableSet*)primitiveContributors;
+- (void)setPrimitiveContributors:(NSMutableSet*)value;
+
+- (NSMutableSet*)primitiveIssues;
+- (void)setPrimitiveIssues:(NSMutableSet*)value;
 
 - (GitUserModel*)primitiveOwner;
 - (void)setPrimitiveOwner:(GitUserModel*)value;

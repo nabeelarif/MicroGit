@@ -14,6 +14,11 @@ const struct GitIssueModelAttributes GitIssueModelAttributes = {
 	.updatedAt = @"updatedAt",
 };
 
+const struct GitIssueModelRelationships GitIssueModelRelationships = {
+	.repository = @"repository",
+	.user = @"user",
+};
+
 @implementation GitIssueModelID
 @end
 
@@ -128,6 +133,10 @@ const struct GitIssueModelAttributes GitIssueModelAttributes = {
 }
 
 @dynamic updatedAt;
+
+@dynamic repository;
+
+@dynamic user;
 
 @end
 
