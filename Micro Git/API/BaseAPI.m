@@ -38,6 +38,7 @@ NSInteger const GitApiPageSize = 20;
             NSString* link = [httpResponse allHeaderFields][@"Link"];
             for (NSString *str in [link componentsSeparatedByString:@", "]) {
                 NSString *subStr = [[str componentsSeparatedByString:@"?q="] lastObject];
+                subStr = [[subStr componentsSeparatedByString:@">;"] firstObject];
                 if ([str containsString:@"rel=\"next\""]) {
                     for (NSString *str2 in [subStr componentsSeparatedByString:@"&"]) {
                         if([str2 hasPrefix:@"page="]){

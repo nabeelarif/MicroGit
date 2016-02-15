@@ -9,6 +9,19 @@
 #import "RepositoryDetailTableViewController.h"
 #import "ContributorsTableViewController.h"
 #import "IssuesTableViewController.h"
+#import "TitleLabel.h"
+#import "MicroGitLabel.h"
+#import "OctIconConstants.h"
+#import "UIFont+Theme.h"
+
+@interface DisclosureCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet MicroGitLabel *gitLabel;
+@property (weak, nonatomic) IBOutlet TitleLabel *titleLabel;
+
+@end
+@implementation DisclosureCell
+
+@end
 
 @interface RepositoryDetailTableViewController ()
 
@@ -33,59 +46,38 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Incomplete implementation, return the number of sections
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-//    return 0;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
-/*
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 2;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    DisclosureCell *cell = [tableView dequeueReusableCellWithIdentifier:@"disclosureCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    if (indexPath.row==0) {
+        cell.titleLabel.text = @"Issues";
+        cell.gitLabel.text = octicon_issue_opened;
+    }else if(indexPath.row==1){
+        cell.titleLabel.text = @"Contributors";
+        cell.gitLabel.text = octicon_organization;
+    }
+    cell.gitLabel.font = [UIFont gitFontOfSize:27];
+    cell.gitLabel.adjustsFontSizeToFitWidth = YES;
+    cell.gitLabel.minimumScaleFactor = 0.5;
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    if (indexPath.row==0) {
+        [self performSegueWithIdentifier:@"IssuesTableViewController" sender:self];
+    }else if(indexPath.row==1){
+        [self performSegueWithIdentifier:@"ContributorsTableViewController" sender:self];
+    }
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Navigation
 

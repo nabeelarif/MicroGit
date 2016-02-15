@@ -24,7 +24,6 @@
     self.tableView.delegate = self;
     _bottomRefreshControl = [BottomRefreshControl instantiateFromNib];
     _bottomRefreshControl.delegate = self;
-    [self loadMoreDataInternal];
 }
 
 - (void)didReceiveMemoryWarning {

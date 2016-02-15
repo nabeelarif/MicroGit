@@ -17,4 +17,5 @@
 -(void)loadedMoreDataWithSuccess:(BOOL)success;
 - (void)initializeFetchedResultsControllerWithRequst:(NSFetchRequest*)request;
 -(id) objectAtIndexPath:(NSIndexPath*)indexPath;
+-(void)loadMoreDataInternal;
 @end

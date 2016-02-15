@@ -28,10 +28,11 @@
     GitUserModel *owner = self.owner;
     if (!owner) {
         owner = [GitUserModel MR_findFirstByAttribute:@"uniqueId" withValue:[dOwner valueForKey:@"id"] inContext:self.managedObjectContext];
-        if (owner) {
+        if (!owner) {
             owner =  [GitUserModel MR_createEntityInContext:self.managedObjectContext];
         }
     }
+    [self setOwner:owner];
     [owner parseWithDictionary:dOwner];
     
 }

@@ -24,7 +24,7 @@ extern const struct GitRepositoryModelRelationships {
 	__unsafe_unretained NSString *owner;
 } GitRepositoryModelRelationships;
 
-@class GitUserModel;
+@class GitContributorModel;
 @class GitIssueModel;
 @class GitUserModel;
 
@@ -118,8 +118,8 @@ extern const struct GitRepositoryModelRelationships {
 @interface _GitRepositoryModel (ContributorsCoreDataGeneratedAccessors)
 - (void)addContributors:(NSSet*)value_;
 - (void)removeContributors:(NSSet*)value_;
-- (void)addContributorsObject:(GitUserModel*)value_;
-- (void)removeContributorsObject:(GitUserModel*)value_;
+- (void)addContributorsObject:(GitContributorModel*)value_;
+- (void)removeContributorsObject:(GitContributorModel*)value_;
 
 @end
 

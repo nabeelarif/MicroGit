@@ -25,11 +25,12 @@
     GitUserModel *user = self.user;
     if (!user) {
         user = [GitUserModel MR_findFirstByAttribute:@"uniqueId" withValue:[dUser valueForKey:@"id"] inContext:self.managedObjectContext];
-        if (user) {
+        if (!user) {
             user =  [GitUserModel MR_createEntityInContext:self.managedObjectContext];
         }
     }
     [user parseWithDictionary:dUser];
+    [self setUser:user];
 }
 
 @end

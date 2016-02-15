@@ -33,6 +33,7 @@
 		7DF220DB1C709E9A004F1CEF /* PaginatedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */; };
 		7DF220DE1C70CCE3004F1CEF /* IssuesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220DD1C70CCE3004F1CEF /* IssuesAPI.m */; };
 		7DF220E11C70CCFC004F1CEF /* ContributorsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220E01C70CCFC004F1CEF /* ContributorsAPI.m */; };
+		7DF220E91C712A23004F1CEF /* TitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220E81C712A23004F1CEF /* TitleLabel.m */; };
 		7DF4D9981C6F9286007D47B3 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9971C6F9286007D47B3 /* APIClient.m */; };
 		7DF4D99B1C6FB685007D47B3 /* RepositoriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */; };
 		7DF4D99E1C6FB9C8007D47B3 /* BaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */; };
@@ -41,6 +42,8 @@
 		7DF4D9A71C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A61C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m */; };
 		7DF4D9AA1C6FF4E3007D47B3 /* ContributorsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */; };
 		7DF4D9AD1C6FF4F8007D47B3 /* IssuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */; };
+		7DFA3B041C726345009B0F7D /* _GitContributorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFA3B031C726345009B0F7D /* _GitContributorModel.m */; };
+		7DFA3B071C726352009B0F7D /* GitContributorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFA3B061C726352009B0F7D /* GitContributorModel.m */; };
 		7DFCF2081C6F4DF80023FB31 /* _GitIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */; };
 		7DFCF2091C6F4DF80023FB31 /* _GitRepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF1FF1C6F4DF80023FB31 /* _GitRepositoryModel.m */; };
 		7DFCF20A1C6F4DF80023FB31 /* _GitUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFCF2011C6F4DF80023FB31 /* _GitUserModel.m */; };
@@ -79,12 +82,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6D5F224A2444D71C02D6E287 /* Pods-Micro GitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D5F224A2444D71C02D6E287 /* Pods-Micro GitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro GitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.debug.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 		7DCA07231C6E81450080194B /* MicroGitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroGitModel.xcdatamodel; sourceTree = "<group>"; };
 		7DF220C51C707F99004F1CEF /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
 		7DF220C71C708093004F1CEF /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7DF220C81C70866B004F1CEF /* OctIconConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = OctIconConstants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		7DF220C91C70866B004F1CEF /* OctIconConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctIconConstants.m; sourceTree = "<group>"; };
+		7DF220C91C70866B004F1CEF /* OctIconConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OctIconConstants.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7DF220CC1C708E09004F1CEF /* MicroGitTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGitTheme.h; sourceTree = "<group>"; };
 		7DF220CD1C708E09004F1CEF /* MicroGitTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGitTheme.m; sourceTree = "<group>"; };
 		7DF220CF1C709042004F1CEF /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
@@ -96,15 +99,17 @@
 		7DF220D91C709E9A004F1CEF /* PaginatedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedTableViewController.h; sourceTree = "<group>"; };
 		7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedTableViewController.m; sourceTree = "<group>"; };
 		7DF220DC1C70CCE3004F1CEF /* IssuesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesAPI.h; sourceTree = "<group>"; };
-		7DF220DD1C70CCE3004F1CEF /* IssuesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesAPI.m; sourceTree = "<group>"; };
+		7DF220DD1C70CCE3004F1CEF /* IssuesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IssuesAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7DF220DF1C70CCFC004F1CEF /* ContributorsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsAPI.h; sourceTree = "<group>"; };
-		7DF220E01C70CCFC004F1CEF /* ContributorsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsAPI.m; sourceTree = "<group>"; };
+		7DF220E01C70CCFC004F1CEF /* ContributorsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContributorsAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7DF220E71C712A23004F1CEF /* TitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleLabel.h; sourceTree = "<group>"; };
+		7DF220E81C712A23004F1CEF /* TitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleLabel.m; sourceTree = "<group>"; };
 		7DF4D9961C6F9286007D47B3 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		7DF4D9971C6F9286007D47B3 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		7DF4D9991C6FB685007D47B3 /* RepositoriesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoriesAPI.h; sourceTree = "<group>"; };
-		7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoriesAPI.m; sourceTree = "<group>"; };
+		7DF4D99A1C6FB685007D47B3 /* RepositoriesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RepositoriesAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7DF4D99C1C6FB9C8007D47B3 /* BaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPI.h; sourceTree = "<group>"; };
-		7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPI.m; sourceTree = "<group>"; };
+		7DF4D99D1C6FB9C8007D47B3 /* BaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BaseAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7DF4D9A01C6FE42E007D47B3 /* BottomRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomRefreshControl.h; sourceTree = "<group>"; };
 		7DF4D9A11C6FE42E007D47B3 /* BottomRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomRefreshControl.m; sourceTree = "<group>"; };
 		7DF4D9A31C6FE43F007D47B3 /* BottomRefreshControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomRefreshControl.xib; sourceTree = "<group>"; };
@@ -114,6 +119,10 @@
 		7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsTableViewController.m; sourceTree = "<group>"; };
 		7DF4D9AB1C6FF4F8007D47B3 /* IssuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesTableViewController.h; sourceTree = "<group>"; };
 		7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesTableViewController.m; sourceTree = "<group>"; };
+		7DFA3B021C726345009B0F7D /* _GitContributorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitContributorModel.h; sourceTree = "<group>"; };
+		7DFA3B031C726345009B0F7D /* _GitContributorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GitContributorModel.m; sourceTree = "<group>"; };
+		7DFA3B051C726352009B0F7D /* GitContributorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitContributorModel.h; sourceTree = "<group>"; };
+		7DFA3B061C726352009B0F7D /* GitContributorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitContributorModel.m; sourceTree = "<group>"; };
 		7DFCF1FC1C6F4DF80023FB31 /* _GitIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitIssueModel.h; sourceTree = "<group>"; };
 		7DFCF1FD1C6F4DF80023FB31 /* _GitIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GitIssueModel.m; sourceTree = "<group>"; };
 		7DFCF1FE1C6F4DF80023FB31 /* _GitRepositoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GitRepositoryModel.h; sourceTree = "<group>"; };
@@ -128,12 +137,12 @@
 		7DFCF2071C6F4DF80023FB31 /* GitUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitUserModel.m; sourceTree = "<group>"; };
 		7DFCF20E1C6F6D800023FB31 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		7DFCF20F1C6F6D800023FB31 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		83291FEEC92B5E0E3E7F0D7B /* Pods-Micro Git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro Git.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro Git/Pods-Micro Git.release.xcconfig"; sourceTree = "<group>"; };
+		83291FEEC92B5E0E3E7F0D7B /* Pods-Micro Git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro Git.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro Git/Pods-Micro Git.release.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 		ABA06E2199BE19C497053D1B /* libPods-Micro Git.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Micro Git.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE641B63EA6DADFF41F2F4D0 /* Pods-Micro GitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitTests/Pods-Micro GitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE641B63EA6DADFF41F2F4D0 /* Pods-Micro GitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro GitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitTests/Pods-Micro GitTests.debug.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 		C4F7FA479C9F3A63A64C7316 /* libPods-Micro GitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Micro GitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE4F19B2BB66AC8903B4AF58 /* Pods-Micro GitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EC7D2833AD4C4983F2F91EDE /* Pods-Micro Git.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro Git.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro Git/Pods-Micro Git.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4F19B2BB66AC8903B4AF58 /* Pods-Micro GitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro GitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.release.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
+		EC7D2833AD4C4983F2F91EDE /* Pods-Micro Git.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro Git.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro Git/Pods-Micro Git.debug.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 		EFB852916BEFD15CE2385355 /* libPods-Micro GitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Micro GitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47036B31C6D0234009365D9 /* Micro Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Micro Git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47036B71C6D0234009365D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -153,7 +162,7 @@
 		F47036DD1C6D0234009365D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47036E91C6D1107009365D9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		F47036EA1C6D1107009365D9 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		FA2F5BD6F497D63509E9DA52 /* Pods-Micro GitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro GitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitTests/Pods-Micro GitTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA2F5BD6F497D63509E9DA52 /* Pods-Micro GitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro GitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitTests/Pods-Micro GitTests.release.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +248,27 @@
 			children = (
 				7DF220D61C7094DE004F1CEF /* MicroGitLabel.h */,
 				7DF220D71C7094DE004F1CEF /* MicroGitLabel.m */,
+				7DF220E71C712A23004F1CEF /* TitleLabel.h */,
+				7DF220E81C712A23004F1CEF /* TitleLabel.m */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		7DF220E21C7106D7004F1CEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DF220D91C709E9A004F1CEF /* PaginatedTableViewController.h */,
+				7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */,
+				F47036BC1C6D0234009365D9 /* RepositoriesTableViewController.h */,
+				F47036BD1C6D0234009365D9 /* RepositoriesTableViewController.m */,
+				7DF4D9A51C6FF4D4007D47B3 /* RepositoryDetailTableViewController.h */,
+				7DF4D9A61C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m */,
+				7DF4D9A81C6FF4E3007D47B3 /* ContributorsTableViewController.h */,
+				7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */,
+				7DF4D9AB1C6FF4F8007D47B3 /* IssuesTableViewController.h */,
+				7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		7DF4D99F1C6FE3FF007D47B3 /* BottomRefreshControl */ = {
@@ -262,6 +290,8 @@
 				7DFCF1FF1C6F4DF80023FB31 /* _GitRepositoryModel.m */,
 				7DFCF2001C6F4DF80023FB31 /* _GitUserModel.h */,
 				7DFCF2011C6F4DF80023FB31 /* _GitUserModel.m */,
+				7DFA3B021C726345009B0F7D /* _GitContributorModel.h */,
+				7DFA3B031C726345009B0F7D /* _GitContributorModel.m */,
 				7DFCF2021C6F4DF80023FB31 /* GitIssueModel.h */,
 				7DFCF2031C6F4DF80023FB31 /* GitIssueModel.m */,
 				7DFCF2041C6F4DF80023FB31 /* GitRepositoryModel.h */,
@@ -270,6 +300,8 @@
 				7DFCF2071C6F4DF80023FB31 /* GitUserModel.m */,
 				7DFCF20E1C6F6D800023FB31 /* BaseModel.h */,
 				7DFCF20F1C6F6D800023FB31 /* BaseModel.m */,
+				7DFA3B051C726352009B0F7D /* GitContributorModel.h */,
+				7DFA3B061C726352009B0F7D /* GitContributorModel.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -330,8 +362,7 @@
 				7DCA07201C6E7C710080194B /* Model */,
 				F47036B91C6D0234009365D9 /* AppDelegate.h */,
 				F47036BA1C6D0234009365D9 /* AppDelegate.m */,
-				F47036BC1C6D0234009365D9 /* RepositoriesTableViewController.h */,
-				F47036BD1C6D0234009365D9 /* RepositoriesTableViewController.m */,
+				7DF220E21C7106D7004F1CEF /* Controllers */,
 				F47036BF1C6D0234009365D9 /* Main.storyboard */,
 				F47036C21C6D0234009365D9 /* Assets.xcassets */,
 				F47036C41C6D0234009365D9 /* LaunchScreen.storyboard */,
@@ -339,14 +370,6 @@
 				F47036E91C6D1107009365D9 /* iTunesArtwork.png */,
 				F47036EA1C6D1107009365D9 /* iTunesArtwork@2x.png */,
 				F47036B61C6D0234009365D9 /* Supporting Files */,
-				7DF4D9A51C6FF4D4007D47B3 /* RepositoryDetailTableViewController.h */,
-				7DF4D9A61C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m */,
-				7DF4D9A81C6FF4E3007D47B3 /* ContributorsTableViewController.h */,
-				7DF4D9A91C6FF4E3007D47B3 /* ContributorsTableViewController.m */,
-				7DF4D9AB1C6FF4F8007D47B3 /* IssuesTableViewController.h */,
-				7DF4D9AC1C6FF4F8007D47B3 /* IssuesTableViewController.m */,
-				7DF220D91C709E9A004F1CEF /* PaginatedTableViewController.h */,
-				7DF220DA1C709E9A004F1CEF /* PaginatedTableViewController.m */,
 			);
 			path = "Micro Git";
 			sourceTree = "<group>";
@@ -661,6 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF220E91C712A23004F1CEF /* TitleLabel.m in Sources */,
 				7DFCF20B1C6F4DF80023FB31 /* GitIssueModel.m in Sources */,
 				7DF4D9AA1C6FF4E3007D47B3 /* ContributorsTableViewController.m in Sources */,
 				7DFCF2091C6F4DF80023FB31 /* _GitRepositoryModel.m in Sources */,
@@ -676,10 +700,12 @@
 				7DF220E11C70CCFC004F1CEF /* ContributorsAPI.m in Sources */,
 				7DF4D99E1C6FB9C8007D47B3 /* BaseAPI.m in Sources */,
 				F47036BB1C6D0234009365D9 /* AppDelegate.m in Sources */,
+				7DFA3B071C726352009B0F7D /* GitContributorModel.m in Sources */,
 				7DF4D99B1C6FB685007D47B3 /* RepositoriesAPI.m in Sources */,
 				7DF220CE1C708E09004F1CEF /* MicroGitTheme.m in Sources */,
 				F47036B81C6D0234009365D9 /* main.m in Sources */,
 				7DF220D81C7094DE004F1CEF /* MicroGitLabel.m in Sources */,
+				7DFA3B041C726345009B0F7D /* _GitContributorModel.m in Sources */,
 				7DF220CA1C70866B004F1CEF /* OctIconConstants.m in Sources */,
 				7DF4D9A71C6FF4D4007D47B3 /* RepositoryDetailTableViewController.m in Sources */,
 				7DF4D9981C6F9286007D47B3 /* APIClient.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "ContributorsAPI.h"
-#import "GitUserModel.h"
+#import "GitContributorModel.h"
 
 @interface ContributorsAPI ()
 @property (nonatomic, strong) GitRepositoryModel *repository;
@@ -19,7 +19,7 @@
 {
     self.repository = repository;
     
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@repos/%@/contributors?q=page=%ld&per_page=%ld",GitApiBaseUrl,_repository.fullName,self.nextPage,GitApiPageSize]];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@repositories/%@/contributors?q=order=desc&page=%ld&per_page=%ld",GitApiBaseUrl,_repository.uniqueId,self.nextPage,GitApiPageSize]];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     [self loadPaginatedDataForRequest:request apiBlock:block];
 }
@@ -35,9 +35,10 @@
     GitRepositoryModel *localRepo = [GitRepositoryModel MR_findFirstByAttribute:@"uniqueId" withValue:_repository.uniqueId inContext:localContext];
     
     for (NSDictionary *dRepo in responseObject) {
-        GitUserModel *user = [GitUserModel MR_findFirstByAttribute:@"uniqueId" withValue:[dRepo valueForKey:@"id"] inContext:localContext];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"repository.uniqueId = %@ AND user.uniqueId = %@",_repository.uniqueId, [dRepo valueForKey:@"id"]];
+        GitContributorModel *user = [GitContributorModel MR_findFirstWithPredicate:predicate inContext:localContext];
         if (!user) {
-            user = [GitUserModel MR_createEntityInContext:localContext];
+            user = [GitContributorModel MR_createEntityInContext:localContext];
         }
         [user parseWithDictionary:dRepo];
         [localRepo addContributorsObject:user];
