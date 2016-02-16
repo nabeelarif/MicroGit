@@ -16,6 +16,9 @@
 @property (nonatomic,readonly) BOOL isNetworkReachable;
 +(instancetype)sharedInstance;
 -(void)loadRepositoriesForLanguage:(NSString*)language apiBlock:(APIBlock)block;
--(void)loadIssuesOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
+-(void)loadOpenIssuesOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
+-(void)loadClosedIssuesOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
+-(void)loadOpenPullRequestsOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
+-(void)loadClosedPullRequestsOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
 -(void)loadContributorsOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block;
 @end

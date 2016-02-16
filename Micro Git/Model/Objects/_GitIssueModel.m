@@ -10,6 +10,7 @@ const struct GitIssueModelAttributes GitIssueModelAttributes = {
 	.number = @"number",
 	.state = @"state",
 	.title = @"title",
+	.type = @"type",
 	.uniqueId = @"uniqueId",
 	.updatedAt = @"updatedAt",
 };
@@ -111,6 +112,8 @@ const struct GitIssueModelRelationships GitIssueModelRelationships = {
 @dynamic state;
 
 @dynamic title;
+
+@dynamic type;
 
 @dynamic uniqueId;
 

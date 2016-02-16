@@ -19,6 +19,11 @@
     self.title = [dictionary valueForKey:@"title"];
     self.uniqueId = [dictionary valueForKey:@"id"];
     self.updatedAt = [[self dateFormatter] dateFromString:[dictionary valueForKey:@"updated_at"]];
+    if ([dictionary valueForKey:@"pull_request"]) {
+        self.type = @"pr";
+    }else{
+        self.type = @"issue";
+    }
     
     // Parse User
     NSDictionary *dUser = [dictionary valueForKey:@"user"];

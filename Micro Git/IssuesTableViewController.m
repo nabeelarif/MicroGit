@@ -14,6 +14,7 @@
 #import "OctIconConstants.h"
 #import "GitUserModel.h"
 #import "UIFont+Theme.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface IssuesCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet MicroGitLabel *gitMainLabel;
@@ -36,13 +37,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"repository.uniqueId = %@",_repository.uniqueId];
-    if ([GitIssueModel MR_countOfEntitiesWithPredicate:predicate inContext:[NSManagedObjectContext MR_defaultContext]]==0) {
+    if ([GitIssueModel MR_countOfEntitiesWithPredicate:[self predicate] inContext:[NSManagedObjectContext MR_defaultContext]]==0) {
         [self loadMoreDataInternal];
     }
+    if (_isOpenIssue && !_isPullRequest) {
+        self.title = @"Open Issues";
+    }else if(!_isOpenIssue && !_isPullRequest){
+        self.title = @"Closed Issues";
+    }else if(_isOpenIssue && _isPullRequest){
+        self.title = @"Open Pull requests";
+    }else if(!_isOpenIssue && _isPullRequest){
+        self.title = @"Closed Pull requests";
+    }
 }
-
+-(NSPredicate*)predicate
+{
+    NSPredicate *predicate1 = [NSPredicate predicateWithFormat:@"state == %@",_isOpenIssue?@"open":@"closed"];
+    NSPredicate *predicate2 = [NSPredicate predicateWithFormat:@"type == %@",_isPullRequest?@"pr":@"issue"];
+    NSPredicate *predicate3 = [NSPredicate predicateWithFormat:@"repository.uniqueId == %@",_repository.uniqueId];
+    NSPredicate *predicate = [NSCompoundPredicate andPredicateWithSubpredicates:@[predicate1, predicate2,predicate3]];;
+    return predicate;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -57,10 +72,8 @@
 - (void)initializeFetchedResultsController
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[GitIssueModel entityName]];
-    //    _currentCategoryChannel.messages;
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"repository.uniqueId = %@",_repository.uniqueId];
-    NSSortDescriptor *dateUpdate = [NSSortDescriptor sortDescriptorWithKey:@"createdAt" ascending:NO];
-    [request setPredicate:predicate];
+    NSSortDescriptor *dateUpdate = [NSSortDescriptor sortDescriptorWithKey:@"number" ascending:NO];
+    [request setPredicate:[self predicate]];
     [request setSortDescriptors:@[dateUpdate]];
     [self initializeFetchedResultsControllerWithRequst:request];
 }
@@ -73,9 +86,19 @@
     return UITableViewAutomaticDimension;
 }
 - (void)configureCell:(IssuesCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    
+    if (_isOpenIssue && !_isPullRequest) {
+        cell.gitMainLabel.text = octicon_issue_opened;
+    }else if(!_isOpenIssue && !_isPullRequest){
+        cell.gitMainLabel.text = octicon_issue_closed;
+    }else if(_isOpenIssue && _isPullRequest){
+        cell.gitMainLabel.text = octicon_git_pull_request;
+    }else if(!_isOpenIssue && _isPullRequest){
+        cell.gitMainLabel.text = octicon_check;
+    }
+    
     GitIssueModel *issue = [self objectAtIndexPath:indexPath];
-    cell.gitMainLabel.text= octicon_issue_opened;
-    cell.titleLabel.text = issue.title;
+    cell.titleLabel.text = [NSString stringWithFormat:@"%@\n#%@",issue.title,issue.number];
     cell.bodyLabel.text = issue.body;
     cell.userLabel.text = issue.user.login;
     cell.gitCommentsLabel.text = [NSString stringWithFormat:@"%@ %@",issue.commentsCount, octicon_mail];
@@ -107,10 +130,27 @@
 }
 -(void)loadMoreData
 {
-    [APIClientKit loadIssuesOfRepository:_repository apiBlock:^(BOOL success, BOOL hasMoreData) {
-        [self loadedMoreDataWithSuccess:success];
-        self.hasMoreData = hasMoreData;
-    }];
+    if (_isOpenIssue && _isPullRequest) {
+        [APIClientKit loadOpenPullRequestsOfRepository:_repository apiBlock:^(BOOL success, BOOL hasMoreData) {
+            [self loadedMoreDataWithSuccess:success];
+            self.hasMoreData = hasMoreData;
+        }];
+    }else if (_isOpenIssue && !_isPullRequest) {
+        [APIClientKit loadOpenIssuesOfRepository:_repository apiBlock:^(BOOL success, BOOL hasMoreData) {
+            [self loadedMoreDataWithSuccess:success];
+            self.hasMoreData = hasMoreData;
+        }];
+    }else if (!_isOpenIssue && _isPullRequest) {
+        [APIClientKit loadClosedPullRequestsOfRepository:_repository apiBlock:^(BOOL success, BOOL hasMoreData) {
+            [self loadedMoreDataWithSuccess:success];
+            self.hasMoreData = hasMoreData;
+        }];
+    }else if (!_isOpenIssue && !_isPullRequest) {
+        [APIClientKit loadClosedIssuesOfRepository:_repository apiBlock:^(BOOL success, BOOL hasMoreData) {
+            [self loadedMoreDataWithSuccess:success];
+            self.hasMoreData = hasMoreData;
+        }];
+    }
 }
 /*
 #pragma mark - Navigation

@@ -51,16 +51,25 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DisclosureCell *cell = [tableView dequeueReusableCellWithIdentifier:@"disclosureCell" forIndexPath:indexPath];
     
     if (indexPath.row==0) {
-        cell.titleLabel.text = @"Issues";
+        cell.titleLabel.text = @"Open Issues";
         cell.gitLabel.text = octicon_issue_opened;
     }else if(indexPath.row==1){
+        cell.titleLabel.text = @"Closed Issues";
+        cell.gitLabel.text = octicon_issue_closed;
+    }else if(indexPath.row==2){
+        cell.titleLabel.text = @"Open Pull requests";
+        cell.gitLabel.text = octicon_git_pull_request;
+    }else if(indexPath.row==3){
+        cell.titleLabel.text = @"Closed Pull requests";
+        cell.gitLabel.text = octicon_check;
+    }else if(indexPath.row==4){
         cell.titleLabel.text = @"Contributors";
         cell.gitLabel.text = octicon_organization;
     }
@@ -72,9 +81,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    if (indexPath.row==0) {
+    if (indexPath.row<4) {
         [self performSegueWithIdentifier:@"IssuesTableViewController" sender:self];
-    }else if(indexPath.row==1){
+    }else if(indexPath.row==4){
         [self performSegueWithIdentifier:@"ContributorsTableViewController" sender:self];
     }
 }
@@ -83,9 +92,23 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
     if ([segue.identifier isEqualToString:@"IssuesTableViewController"]) {
         IssuesTableViewController *issues = (IssuesTableViewController*)segue.destinationViewController;
         issues.repository = _repository;
+        if (indexPath.row==0) {
+            issues.isOpenIssue=YES;
+            issues.isPullRequest=NO;
+        }else if (indexPath.row==1) {
+            issues.isOpenIssue=NO;
+            issues.isPullRequest=NO;
+        }else if (indexPath.row==2) {
+            issues.isOpenIssue=YES;
+            issues.isPullRequest=YES;
+        }else if (indexPath.row==3) {
+            issues.isOpenIssue=NO;
+            issues.isPullRequest=YES;
+        }
     }else if([segue.identifier isEqualToString:@"ContributorsTableViewController"]){
         ContributorsTableViewController *contributors = (ContributorsTableViewController*)segue.destinationViewController;
         contributors.repository = _repository;

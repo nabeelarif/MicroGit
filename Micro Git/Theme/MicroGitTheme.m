@@ -51,7 +51,7 @@
     [[TitleLabel appearanceWhenContainedIn:UITableViewCell.class, nil]
      setShadowColor:[UIColor lightGrayColor]];
     [[TitleLabel appearanceWhenContainedIn:UITableViewCell.class, nil]
-     setShadowOffset:CGSizeMake(0., -2.)];
+     setShadowOffset:CGSizeMake(0., 1.)];
 //    [[TitleLabel appearanceWhenContainedIn:UITableViewCell.class, nil]
 //     setTextColor:[UIColor appColorWithLightness:0.2]];
     [[TitleLabel appearanceWhenContainedIn:UITableViewCell.class, nil] setTextColor:[UIColor colorWithHex:@"#800000" alpha:1.]];

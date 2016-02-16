@@ -15,7 +15,10 @@
 @interface APIClient ()
 
 @property (nonatomic,strong) RepositoriesAPI *repositoriesApi;
-@property (nonatomic,strong) IssuesAPI *issuesApi;
+@property (nonatomic,strong) IssuesAPI *openIssuesApi;
+@property (nonatomic,strong) IssuesAPI *closedIssuesApi;
+@property (nonatomic,strong) IssuesAPI *openPullRequestsApi;
+@property (nonatomic,strong) IssuesAPI *closedPullRequestsApi;
 @property (nonatomic,strong) ContributorsAPI *contributorsApi;
 
 @end
@@ -28,7 +31,10 @@
     dispatch_once(&token, ^{
         sharedClient = [[self alloc] init];
         sharedClient.repositoriesApi = [[RepositoriesAPI alloc] init];
-        sharedClient.issuesApi = [[IssuesAPI alloc] init];
+        sharedClient.openIssuesApi = [[IssuesAPI alloc] init];
+        sharedClient.closedIssuesApi = [[IssuesAPI alloc] init];
+        sharedClient.openPullRequestsApi = [[IssuesAPI alloc] init];
+        sharedClient.closedPullRequestsApi = [[IssuesAPI alloc] init];
         sharedClient.contributorsApi = [[ContributorsAPI alloc] init];
         [sharedClient addNetworkStatusListener];
     });
@@ -55,9 +61,21 @@
 {
     [_repositoriesApi loadRepositoriesForLanguage:language apiBlock:block];
 }
--(void)loadIssuesOfRepository:(id)repository apiBlock:(APIBlock)block
+-(void)loadOpenIssuesOfRepository:(id)repository apiBlock:(APIBlock)block
 {
-    [_issuesApi loadIssuesOfRepository:repository apiBlock:block];
+    [_openIssuesApi loadIssuesOfRepository:repository type:ISSUES_TYPE_OpenIssues apiBlock:block];
+}
+-(void)loadClosedIssuesOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block
+{
+    [_closedIssuesApi loadIssuesOfRepository:repository type:ISSUES_TYPE_ClosedIssues apiBlock:block];
+}
+-(void)loadOpenPullRequestsOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block
+{
+    [_openPullRequestsApi loadIssuesOfRepository:repository type:ISSUES_TYPE_OpenPullRequests apiBlock:block];
+}
+-(void)loadClosedPullRequestsOfRepository:(GitRepositoryModel*)repository apiBlock:(APIBlock)block
+{
+    [_closedPullRequestsApi loadIssuesOfRepository:repository type:ISSUES_TYPE_ClosedPullRequests apiBlock:block];
 }
 -(void)loadContributorsOfRepository:(id)repository apiBlock:(APIBlock)block
 {

@@ -13,6 +13,7 @@
         <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uniqueId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="repository" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GitRepository" inverseName="issues" inverseEntity="GitRepository" syncable="YES"/>
@@ -58,9 +59,9 @@
         </compoundIndexes>
     </entity>
     <elements>
-        <element name="GitIssue" positionX="-36" positionY="9" width="128" height="195"/>
+        <element name="GitContributor" positionX="-54" positionY="99" width="128" height="105"/>
+        <element name="GitIssue" positionX="-36" positionY="9" width="128" height="210"/>
         <element name="GitRepository" positionX="-63" positionY="-18" width="128" height="255"/>
         <element name="GitUser" positionX="-54" positionY="-9" width="128" height="135"/>
-        <element name="GitContributor" positionX="-54" positionY="99" width="128" height="105"/>
     </elements>
 </model>

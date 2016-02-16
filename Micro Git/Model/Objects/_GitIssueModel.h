@@ -11,6 +11,7 @@ extern const struct GitIssueModelAttributes {
 	__unsafe_unretained NSString *number;
 	__unsafe_unretained NSString *state;
 	__unsafe_unretained NSString *title;
+	__unsafe_unretained NSString *type;
 	__unsafe_unretained NSString *uniqueId;
 	__unsafe_unretained NSString *updatedAt;
 } GitIssueModelAttributes;
@@ -63,6 +64,10 @@ extern const struct GitIssueModelRelationships {
 @property (nonatomic, strong) NSString* title;
 
 //- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) NSString* type;
+
+//- (BOOL)validateType:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) NSNumber* uniqueId;
 

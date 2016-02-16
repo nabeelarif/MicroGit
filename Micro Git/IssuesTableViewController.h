@@ -12,4 +12,6 @@
 
 @interface IssuesTableViewController : PaginatedTableViewController
 @property (nonatomic, strong) GitRepositoryModel *repository;
+@property (nonatomic) BOOL isOpenIssue;
+@property (nonatomic) BOOL isPullRequest;
 @end
