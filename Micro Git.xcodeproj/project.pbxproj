@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		1025B9FF2F362577FC17BFDB /* libPods-Micro GitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB852916BEFD15CE2385355 /* libPods-Micro GitUITests.a */; };
 		56627E9DE6B2375FF50EB53C /* libPods-Micro GitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F7FA479C9F3A63A64C7316 /* libPods-Micro GitTests.a */; };
+		7DC6AC791C750BD6002A14A4 /* RepoTableViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6AC781C750BD6002A14A4 /* RepoTableViewControllerTest.m */; };
 		7DCA07241C6E81450080194B /* MicroGitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA07221C6E81450080194B /* MicroGitModel.xcdatamodeld */; };
 		7DF220C61C707F99004F1CEF /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF220C51C707F99004F1CEF /* octicons.ttf */; };
 		7DF220CA1C70866B004F1CEF /* OctIconConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF220C91C70866B004F1CEF /* OctIconConstants.m */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		6D5F224A2444D71C02D6E287 /* Pods-Micro GitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Pods-Micro GitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro GitUITests/Pods-Micro GitUITests.debug.xcconfig"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
+		7DC6AC781C750BD6002A14A4 /* RepoTableViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoTableViewControllerTest.m; sourceTree = "<group>"; };
 		7DCA07231C6E81450080194B /* MicroGitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroGitModel.xcdatamodel; sourceTree = "<group>"; };
 		7DF220C51C707F99004F1CEF /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
 		7DF220C71C708093004F1CEF /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				F47036D01C6D0234009365D9 /* Micro_GitTests.m */,
+				7DC6AC781C750BD6002A14A4 /* RepoTableViewControllerTest.m */,
 				F47036D21C6D0234009365D9 /* Info.plist */,
 			);
 			path = "Micro GitTests";
@@ -721,6 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47036D11C6D0234009365D9 /* Micro_GitTests.m in Sources */,
+				7DC6AC791C750BD6002A14A4 /* RepoTableViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,6 +873,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = "Micro Git/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -883,6 +888,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = "Micro Git/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

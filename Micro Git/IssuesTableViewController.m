@@ -101,7 +101,7 @@
     cell.titleLabel.text = [NSString stringWithFormat:@"%@\n#%@",issue.title,issue.number];
     cell.bodyLabel.text = issue.body;
     cell.userLabel.text = issue.user.login;
-    cell.gitCommentsLabel.text = [NSString stringWithFormat:@"%@ %@",issue.commentsCount, octicon_mail];
+    cell.gitCommentsLabel.text = [NSString stringWithFormat:@"%@ %@",issue.commentsCount, octicon_comment];
     if ([[issue.user.type lowercaseString] isEqualToString:@"user"]) {
         cell.gitUserLabel.text = octicon_person;
     }else{
