@@ -18,11 +18,11 @@
 >      once you will reach end of page)
 
 
-<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/1-MicroGitHomePage.png" alt="MicroGit's Home Page" width="308" height="550">
-<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/2-MicroGitSearchPage.png" alt="MicroGit's Search page" width="308" height="550">
-<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/3-MicroGitExploreRepo.png" alt="MicroGit's See details of repo" width="308" height="550">
-<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/4-MicroGitOpenpullRequests.png" alt="MicroGit's Open Pull Requests Page" width="308" height="550">
-<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/5-MicroGitContributers.png" alt="MicroGit's Contributors of Repo Page" width="308" height="550">
+<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/1-MicroGitHomePage.png" alt="MicroGit's Home Page" width="200" height="357">
+<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/2-MicroGitSearchPage.png" alt="MicroGit's Search page" width="200" height="357">
+<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/3-MicroGitExploreRepo.png" alt="MicroGit's See details of repo" width="200" height="357">
+<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/4-MicroGitOpenpullRequests.png" alt="MicroGit's Open Pull Requests Page" width="200" height="357">
+<img src="https://github.com/nabeelarif/MicroGit/blob/master/Screenshots/5-MicroGitContributers.png" alt="MicroGit's Contributors of Repo Page" width="200" height="357">
 
 
 #Version Control:
